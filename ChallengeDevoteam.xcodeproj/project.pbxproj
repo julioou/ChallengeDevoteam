@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		43E9641E2BA98D140050A172 /* ChallengeDevoteamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9641D2BA98D140050A172 /* ChallengeDevoteamApp.swift */; };
-		43E964202BA98D140050A172 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9641F2BA98D140050A172 /* ContentView.swift */; };
+		43E964202BA98D140050A172 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9641F2BA98D140050A172 /* Home.swift */; };
 		43E964222BA98D160050A172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E964212BA98D160050A172 /* Assets.xcassets */; };
 		43E964252BA98D160050A172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E964242BA98D160050A172 /* Preview Assets.xcassets */; };
 		43E9642F2BA98D160050A172 /* ChallengeDevoteamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9642E2BA98D160050A172 /* ChallengeDevoteamTests.swift */; };
 		43E964392BA98D160050A172 /* ChallengeDevoteamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964382BA98D160050A172 /* ChallengeDevoteamUITests.swift */; };
 		43E9643B2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9643A2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift */; };
+		43E9644D2BA9AB4E0050A172 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */; };
+		43E964532BA9B2FB0050A172 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */; };
+		43E964562BA9BC8F0050A172 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 43E964552BA9BC8F0050A172 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		43E9641A2BA98D140050A172 /* ChallengeDevoteam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeDevoteam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E9641D2BA98D140050A172 /* ChallengeDevoteamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamApp.swift; sourceTree = "<group>"; };
-		43E9641F2BA98D140050A172 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43E9641F2BA98D140050A172 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		43E964212BA98D160050A172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E964242BA98D160050A172 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43E9642A2BA98D160050A172 /* ChallengeDevoteamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeDevoteamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,8 @@
 		43E964342BA98D160050A172 /* ChallengeDevoteamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeDevoteamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E964382BA98D160050A172 /* ChallengeDevoteamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamUITests.swift; sourceTree = "<group>"; };
 		43E9643A2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
+		43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43E964562BA9BC8F0050A172 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				43E9641D2BA98D140050A172 /* ChallengeDevoteamApp.swift */,
-				43E9641F2BA98D140050A172 /* ContentView.swift */,
+				43E964492BA9AA910050A172 /* Network */,
+				43E964482BA9AA8B0050A172 /* Features */,
+				43E964472BA9AA830050A172 /* Components */,
+				43E964512BA9B2E30050A172 /* Helper */,
 				43E964212BA98D160050A172 /* Assets.xcassets */,
 				43E964232BA98D160050A172 /* Preview Content */,
 			);
@@ -127,6 +136,53 @@
 			path = ChallengeDevoteamUITests;
 			sourceTree = "<group>";
 		};
+		43E964472BA9AA830050A172 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		43E964482BA9AA8B0050A172 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				43E9644A2BA9AAA20050A172 /* Home */,
+				43E9644B2BA9AAA90050A172 /* Details */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		43E964492BA9AA910050A172 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		43E9644A2BA9AAA20050A172 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				43E9641F2BA98D140050A172 /* Home.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		43E9644B2BA9AAA90050A172 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		43E964512BA9B2E30050A172 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +199,9 @@
 			dependencies = (
 			);
 			name = ChallengeDevoteam;
+			packageProductDependencies = (
+				43E964552BA9BC8F0050A172 /* SDWebImageSwiftUI */,
+			);
 			productName = ChallengeDevoteam;
 			productReference = 43E9641A2BA98D140050A172 /* ChallengeDevoteam.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +274,9 @@
 				Base,
 			);
 			mainGroup = 43E964112BA98D140050A172;
+			packageReferences = (
+				43E964542BA9BC8F0050A172 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 43E9641B2BA98D140050A172 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +319,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E964202BA98D140050A172 /* ContentView.swift in Sources */,
+				43E964532BA9B2FB0050A172 /* Foundation+Extension.swift in Sources */,
+				43E9644D2BA9AB4E0050A172 /* ProductCardView.swift in Sources */,
+				43E964202BA98D140050A172 /* Home.swift in Sources */,
 				43E9641E2BA98D140050A172 /* ChallengeDevoteamApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +652,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		43E964542BA9BC8F0050A172 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43E964552BA9BC8F0050A172 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 43E964542BA9BC8F0050A172 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 43E964122BA98D140050A172 /* Project object */;
 }

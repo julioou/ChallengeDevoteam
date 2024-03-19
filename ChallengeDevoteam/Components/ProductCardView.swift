@@ -6,13 +6,55 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct ProductCardView: View {
+
+    let title: String
+    let imageUrl: URL
+    let rating: Float
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+
+            WebImage(url: imageUrl)
+                .resizable()
+                .scaledToFill()
+                .frame(maxWidth: .infinity, maxHeight: 200)
+                .background(.black)
+                .cornerRadius(12)
+                .padding(.horizontal, 36)
+
+            HStack {
+
+                Text(title)
+                    .font(.title2)
+                    .foregroundColor(.black)
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.leading, 38)
+
+                Spacer()
+
+                Image(systemName: "star.fill")
+                    .resizable()
+                    .scaledToFill()
+                    .foregroundColor(.yellow)
+                    .frame(width: 32, height: 32)
+
+
+                Text(rating.twoDigitString())
+                    .font(.title3)
+                    .foregroundColor(.black)
+                    .bold()
+                    .padding(.trailing, 38)
+            }
+        }
     }
 }
 
 #Preview {
-    ProductCardView()
+    ProductCardView(title: "Product name",
+                    imageUrl: URL(string: "https://cdn.kobo.com/book-images/cb230613-26e9-47e1-b622-27fb2c1cf00d/353/569/90/False/the-witcher-volume-4-of-flesh-and-flame.jpg")!,
+                    rating: 4.98)
 }
