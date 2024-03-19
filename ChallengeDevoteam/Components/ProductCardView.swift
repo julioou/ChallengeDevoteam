@@ -24,6 +24,7 @@ struct ProductCardView: View {
                 .background(.black)
                 .cornerRadius(12)
                 .padding(.horizontal, 36)
+                .padding(.top, 20)
 
             HStack {
 
@@ -49,12 +50,18 @@ struct ProductCardView: View {
                     .bold()
                     .padding(.trailing, 38)
             }
+            .padding(.bottom, 6)
         }
+        .background(Color(.white))
+        .cornerRadius(12)
     }
 }
 
 #Preview {
-    ProductCardView(title: "Product name",
-                    imageUrl: URL(string: "https://cdn.kobo.com/book-images/cb230613-26e9-47e1-b622-27fb2c1cf00d/353/569/90/False/the-witcher-volume-4-of-flesh-and-flame.jpg")!,
-                    rating: 4.98)
+    ZStack {
+        Color(.black)
+        ProductCardView(title: "Product name",
+                        imageUrl: URL(string: "https://cdn.kobo.com/book-images/cb230613-26e9-47e1-b622-27fb2c1cf00d/353/569/90/False/the-witcher-volume-4-of-flesh-and-flame.jpg")!,
+                        rating: 4.98)
+    }
 }
