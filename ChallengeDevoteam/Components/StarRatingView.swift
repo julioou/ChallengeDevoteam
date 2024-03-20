@@ -27,7 +27,8 @@ struct StarRatingView: View {
     }
 
     private func startFillingAmount() -> Double {
-        guard let filling = Double(fillValue) else { return .zero }
+        let value = fillValue.replacingOccurrences(of: ",", with: ".")
+        guard let filling = Double(value) else { return .zero }
 
         switch filling {
         case 0...2.9: return 0.3
