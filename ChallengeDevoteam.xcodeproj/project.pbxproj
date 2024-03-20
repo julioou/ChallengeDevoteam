@@ -11,7 +11,7 @@
 		43E964202BA98D140050A172 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9641F2BA98D140050A172 /* Home.swift */; };
 		43E964222BA98D160050A172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E964212BA98D160050A172 /* Assets.xcassets */; };
 		43E964252BA98D160050A172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E964242BA98D160050A172 /* Preview Assets.xcassets */; };
-		43E9642F2BA98D160050A172 /* ChallengeDevoteamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9642E2BA98D160050A172 /* ChallengeDevoteamTests.swift */; };
+		43E9642F2BA98D160050A172 /* ProductsProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9642E2BA98D160050A172 /* ProductsProviderTests.swift */; };
 		43E9644D2BA9AB4E0050A172 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */; };
 		43E964532BA9B2FB0050A172 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */; };
 		43E964592BA9BCCD0050A172 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 43E964582BA9BCCD0050A172 /* SDWebImageSwiftUI */; };
@@ -24,6 +24,8 @@
 		43E9646A2BAAFD810050A172 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964692BAAFD810050A172 /* NetworkManager.swift */; };
 		43E9646C2BAB0A970050A172 /* ProductsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9646B2BAB0A970050A172 /* ProductsProvider.swift */; };
 		43E9646E2BAB59F40050A172 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9646D2BAB59F40050A172 /* StarRatingView.swift */; };
+		43E964732BAB5D660050A172 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964722BAB5D660050A172 /* HomeViewModelTests.swift */; };
+		43E964762BAB5DE80050A172 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964752BAB5DE80050A172 /* ProductData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,7 @@
 		43E964212BA98D160050A172 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43E964242BA98D160050A172 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43E9642A2BA98D160050A172 /* ChallengeDevoteamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeDevoteamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43E9642E2BA98D160050A172 /* ChallengeDevoteamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamTests.swift; sourceTree = "<group>"; };
+		43E9642E2BA98D160050A172 /* ProductsProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProviderTests.swift; sourceTree = "<group>"; };
 		43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
 		43E9645A2BA9BDF70050A172 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 		43E964692BAAFD810050A172 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		43E9646B2BAB0A970050A172 /* ProductsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProvider.swift; sourceTree = "<group>"; };
 		43E9646D2BAB59F40050A172 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		43E964722BAB5D660050A172 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		43E964752BAB5DE80050A172 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +123,8 @@
 		43E9642D2BA98D160050A172 /* ChallengeDevoteamTests */ = {
 			isa = PBXGroup;
 			children = (
-				43E9642E2BA98D160050A172 /* ChallengeDevoteamTests.swift */,
+				43E964702BAB5D420050A172 /* Features */,
+				43E9646F2BAB5D280050A172 /* Networking */,
 			);
 			path = ChallengeDevoteamTests;
 			sourceTree = "<group>";
@@ -194,6 +199,39 @@
 				43E964632BAAF6190050A172 /* ProductData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		43E9646F2BAB5D280050A172 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				43E9642E2BA98D160050A172 /* ProductsProviderTests.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		43E964702BAB5D420050A172 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				43E964742BAB5DDB0050A172 /* Helpers */,
+				43E964712BAB5D490050A172 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		43E964712BAB5D490050A172 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				43E964722BAB5D660050A172 /* HomeViewModelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		43E964742BAB5DDB0050A172 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				43E964752BAB5DE80050A172 /* ProductData.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +360,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43E9642F2BA98D160050A172 /* ChallengeDevoteamTests.swift in Sources */,
+				43E9642F2BA98D160050A172 /* ProductsProviderTests.swift in Sources */,
+				43E964732BAB5D660050A172 /* HomeViewModelTests.swift in Sources */,
+				43E964762BAB5DE80050A172 /* ProductData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

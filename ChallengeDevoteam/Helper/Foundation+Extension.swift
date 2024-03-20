@@ -10,6 +10,6 @@ import Foundation
 extension Double {
 
     func twoDigitString() -> String {
-        String(format: "%.2f", self)
+        String(format: "%.2f", self).replacingOccurrences(of: ".", with: ",")
     }
 }
