@@ -22,14 +22,27 @@ class NetworkManager: APIClient {
 
     func fetchData<T: Decodable>(_ type: T.Type, from url: URL) -> AnyPublisher<T, APIError> {
 
-        session.dataTaskPublisher(for: url)
-            .tryMap { element -> Data in
-                        guard let response = element.response as? HTTPURLResponse,
-                                (200...299).contains(response.statusCode) else {
-                            throw APIError.invalidResponse
-                        }
-                        return element.data
-                    }
+        if let cachedData = URLCache.shared.cachedResponse(for: URLRequest(url: url))?.data {
+            return Just(cachedData)
+                .decode(type: T.self, decoder: JSONDecoder())
+                .mapError { _ in APIError.invalidData }
+                .eraseToAnyPublisher()
+        }
+
+
+        return session.dataTaskPublisher(for: url)
+            .tryMap { result -> Data in
+                guard let response = result.response as? HTTPURLResponse,
+                      (200...299).contains(response.statusCode),
+                      response.statusCode == 200 else {
+                    throw APIError.invalidResponse
+                }
+
+                let cachedResponse = CachedURLResponse(response: response, data: result.data)
+                URLCache.shared.storeCachedResponse(cachedResponse, for: URLRequest(url: url))
+
+                return result.data
+            }
             .decode(type: T.self, decoder: JSONDecoder())
             .mapError { error in
                 (error as? APIError) ?? .unexpected

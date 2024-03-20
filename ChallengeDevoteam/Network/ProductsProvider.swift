@@ -15,7 +15,7 @@ protocol ProductsFetcherProtocol {
 class ProductsProvider: ProductsFetcherProtocol {
 
     enum Endpoint {
-        static let products = "https://dummyjson.com/products?limit=10&skip=10&select=title,rating,thumbnail,discountPercentage,stock,price"
+        static let products = "https://dummyjson.com/products?limit=10&skip=10&select=title,rating,thumbnail,discountPercentage,stock,price,description"
     }
 
     private let service: APIClient

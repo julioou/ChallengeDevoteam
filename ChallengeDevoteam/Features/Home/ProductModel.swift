@@ -17,4 +17,5 @@ struct ProductModel: Identifiable, Hashable {
     let discount: String
     let stock: String
     let price: String
+    let details: String
 }

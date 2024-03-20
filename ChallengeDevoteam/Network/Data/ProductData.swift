@@ -19,4 +19,5 @@ struct ProductData: Decodable {
     let discountPercentage: Double?
     let stock: Int?
     let price: Int?
+    let description: String?
 }
