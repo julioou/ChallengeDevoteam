@@ -34,12 +34,8 @@ struct DetailView: View {
                 HStack {
                     Spacer()
 
-                    Image(systemName: "star.fill")
-                        .resizable()
-                        .scaledToFill()
-                        .foregroundColor(.yellow)
+                    StarRatingView(fillValue: viewModel.product.rating)
                         .frame(width: 28, height: 28)
-
 
                     Text(viewModel.product.rating)
                         .font(.title3)

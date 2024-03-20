@@ -37,12 +37,8 @@ struct ProductCardView: View {
 
                 Spacer()
 
-                Image(systemName: "star.fill")
-                    .resizable()
-                    .scaledToFill()
-                    .foregroundColor(.yellow)
+                StarRatingView(fillValue: rating)
                     .frame(width: 32, height: 32)
-
 
                 Text(rating)
                     .font(.title3)

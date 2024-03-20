@@ -12,8 +12,6 @@
 		43E964222BA98D160050A172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E964212BA98D160050A172 /* Assets.xcassets */; };
 		43E964252BA98D160050A172 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43E964242BA98D160050A172 /* Preview Assets.xcassets */; };
 		43E9642F2BA98D160050A172 /* ChallengeDevoteamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9642E2BA98D160050A172 /* ChallengeDevoteamTests.swift */; };
-		43E964392BA98D160050A172 /* ChallengeDevoteamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964382BA98D160050A172 /* ChallengeDevoteamUITests.swift */; };
-		43E9643B2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9643A2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift */; };
 		43E9644D2BA9AB4E0050A172 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */; };
 		43E964532BA9B2FB0050A172 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */; };
 		43E964592BA9BCCD0050A172 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 43E964582BA9BCCD0050A172 /* SDWebImageSwiftUI */; };
@@ -25,17 +23,11 @@
 		43E964672BAAF6C10050A172 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964662BAAF6C10050A172 /* APIError.swift */; };
 		43E9646A2BAAFD810050A172 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964692BAAFD810050A172 /* NetworkManager.swift */; };
 		43E9646C2BAB0A970050A172 /* ProductsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9646B2BAB0A970050A172 /* ProductsProvider.swift */; };
+		43E9646E2BAB59F40050A172 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9646D2BAB59F40050A172 /* StarRatingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		43E9642B2BA98D160050A172 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 43E964122BA98D140050A172 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 43E964192BA98D140050A172;
-			remoteInfo = ChallengeDevoteam;
-		};
-		43E964352BA98D160050A172 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 43E964122BA98D140050A172 /* Project object */;
 			proxyType = 1;
@@ -52,9 +44,6 @@
 		43E964242BA98D160050A172 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		43E9642A2BA98D160050A172 /* ChallengeDevoteamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeDevoteamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E9642E2BA98D160050A172 /* ChallengeDevoteamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamTests.swift; sourceTree = "<group>"; };
-		43E964342BA98D160050A172 /* ChallengeDevoteamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeDevoteamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		43E964382BA98D160050A172 /* ChallengeDevoteamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamUITests.swift; sourceTree = "<group>"; };
-		43E9643A2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeDevoteamUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 		43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
 		43E9645A2BA9BDF70050A172 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -65,6 +54,7 @@
 		43E964662BAAF6C10050A172 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		43E964692BAAFD810050A172 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		43E9646B2BAB0A970050A172 /* ProductsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProvider.swift; sourceTree = "<group>"; };
+		43E9646D2BAB59F40050A172 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,13 +73,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43E964312BA98D160050A172 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -98,7 +81,6 @@
 			children = (
 				43E9641C2BA98D140050A172 /* ChallengeDevoteam */,
 				43E9642D2BA98D160050A172 /* ChallengeDevoteamTests */,
-				43E964372BA98D160050A172 /* ChallengeDevoteamUITests */,
 				43E9641B2BA98D140050A172 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,7 +90,6 @@
 			children = (
 				43E9641A2BA98D140050A172 /* ChallengeDevoteam.app */,
 				43E9642A2BA98D160050A172 /* ChallengeDevoteamTests.xctest */,
-				43E964342BA98D160050A172 /* ChallengeDevoteamUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,19 +124,11 @@
 			path = ChallengeDevoteamTests;
 			sourceTree = "<group>";
 		};
-		43E964372BA98D160050A172 /* ChallengeDevoteamUITests */ = {
-			isa = PBXGroup;
-			children = (
-				43E964382BA98D160050A172 /* ChallengeDevoteamUITests.swift */,
-				43E9643A2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift */,
-			);
-			path = ChallengeDevoteamUITests;
-			sourceTree = "<group>";
-		};
 		43E964472BA9AA830050A172 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				43E9644C2BA9AB4E0050A172 /* ProductCardView.swift */,
+				43E9646D2BAB59F40050A172 /* StarRatingView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -264,24 +237,6 @@
 			productReference = 43E9642A2BA98D160050A172 /* ChallengeDevoteamTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		43E964332BA98D160050A172 /* ChallengeDevoteamUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 43E964442BA98D160050A172 /* Build configuration list for PBXNativeTarget "ChallengeDevoteamUITests" */;
-			buildPhases = (
-				43E964302BA98D160050A172 /* Sources */,
-				43E964312BA98D160050A172 /* Frameworks */,
-				43E964322BA98D160050A172 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				43E964362BA98D160050A172 /* PBXTargetDependency */,
-			);
-			name = ChallengeDevoteamUITests;
-			productName = ChallengeDevoteamUITests;
-			productReference = 43E964342BA98D160050A172 /* ChallengeDevoteamUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -296,10 +251,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					43E964292BA98D160050A172 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = 43E964192BA98D140050A172;
-					};
-					43E964332BA98D160050A172 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 43E964192BA98D140050A172;
 					};
@@ -323,7 +274,6 @@
 			targets = (
 				43E964192BA98D140050A172 /* ChallengeDevoteam */,
 				43E964292BA98D160050A172 /* ChallengeDevoteamTests */,
-				43E964332BA98D160050A172 /* ChallengeDevoteamUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,13 +295,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43E964322BA98D160050A172 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -364,6 +307,7 @@
 				43E9644D2BA9AB4E0050A172 /* ProductCardView.swift in Sources */,
 				43E964672BAAF6C10050A172 /* APIError.swift in Sources */,
 				43E964602BA9CEB10050A172 /* DetailView.swift in Sources */,
+				43E9646E2BAB59F40050A172 /* StarRatingView.swift in Sources */,
 				43E9646A2BAAFD810050A172 /* NetworkManager.swift in Sources */,
 				43E964202BA98D140050A172 /* Home.swift in Sources */,
 				43E964642BAAF6190050A172 /* ProductData.swift in Sources */,
@@ -382,15 +326,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		43E964302BA98D160050A172 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43E964392BA98D160050A172 /* ChallengeDevoteamUITests.swift in Sources */,
-				43E9643B2BA98D160050A172 /* ChallengeDevoteamUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -398,11 +333,6 @@
 			isa = PBXTargetDependency;
 			target = 43E964192BA98D140050A172 /* ChallengeDevoteam */;
 			targetProxy = 43E9642B2BA98D160050A172 /* PBXContainerItemProxy */;
-		};
-		43E964362BA98D160050A172 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 43E964192BA98D140050A172 /* ChallengeDevoteam */;
-			targetProxy = 43E964352BA98D160050A172 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -624,42 +554,6 @@
 			};
 			name = Release;
 		};
-		43E964452BA98D160050A172 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3H2H296D96;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.ChallengeDevoteamUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChallengeDevoteam;
-			};
-			name = Debug;
-		};
-		43E964462BA98D160050A172 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3H2H296D96;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = personal.ChallengeDevoteamUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChallengeDevoteam;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -686,15 +580,6 @@
 			buildConfigurations = (
 				43E964422BA98D160050A172 /* Debug */,
 				43E964432BA98D160050A172 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		43E964442BA98D160050A172 /* Build configuration list for PBXNativeTarget "ChallengeDevoteamUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				43E964452BA98D160050A172 /* Debug */,
-				43E964462BA98D160050A172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
