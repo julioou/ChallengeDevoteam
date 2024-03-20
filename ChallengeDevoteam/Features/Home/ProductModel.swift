@@ -8,10 +8,15 @@
 import Foundation
 
 struct ProductModel: Identifiable, Hashable {
+
     let id = UUID()
     let title: String
     let imageURL: URL
-    let rating: Float
+    let rating: String
+
+    let discount: String
+    let stock: String
+    let price: String
 }
 
 

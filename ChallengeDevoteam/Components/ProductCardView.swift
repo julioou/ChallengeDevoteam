@@ -12,7 +12,7 @@ struct ProductCardView: View {
 
     let title: String
     let imageUrl: URL
-    let rating: Float
+    let rating: String
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -44,7 +44,7 @@ struct ProductCardView: View {
                     .frame(width: 32, height: 32)
 
 
-                Text(rating.twoDigitString())
+                Text(rating)
                     .font(.title3)
                     .foregroundColor(.black)
                     .bold()
@@ -62,6 +62,6 @@ struct ProductCardView: View {
         Color(.black)
         ProductCardView(title: "Product name",
                         imageUrl: URL(string: "https://cdn.kobo.com/book-images/cb230613-26e9-47e1-b622-27fb2c1cf00d/353/569/90/False/the-witcher-volume-4-of-flesh-and-flame.jpg")!,
-                        rating: 4.98)
+                        rating: "4.98")
     }
 }

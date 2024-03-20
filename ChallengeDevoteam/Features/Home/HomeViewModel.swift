@@ -17,15 +17,36 @@ class HomeViewModel: ObservableObject {
 extension HomeViewModel {
 
     func requestProducts() {
-        products = [ProductModel(title: "perfume Oil",
-                                 imageURL: URL(string: "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg")!,
-                                 rating: 4.26),
-                    ProductModel(title: "Brown Perfume",
-                                             imageURL: URL(string: "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg")!,
-                                             rating: 4),
-                    ProductModel(title: "Fog Scent Xpressio Perfume",
-                                             imageURL: URL(string: "https://cdn.dummyjson.com/product-images/13/thumbnail.webp")!,
-                                             rating: 4.59)
+//        products = [ProductModel(title: "perfume Oil",
+//                                 imageURL: URL(string: "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg")!,
+//                                 rating: "4.26"),
+//                    ProductModel(title: "Brown Perfume",
+//                                             imageURL: URL(string: "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg")!,
+//                                             rating: 4),
+//                    ProductModel(title: "Fog Scent Xpressio Perfume",
+//                                             imageURL: URL(string: "https://cdn.dummyjson.com/product-images/13/thumbnail.webp")!,
+//                                             rating: 4.59)
+//        ]
+
+        products = [
+            ProductModel(title: "perfume Oil",
+                         imageURL: URL(string: "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg")!,
+                         rating: "4.26",
+                         discount: "8%",
+                         stock: "15",
+                         price: "25€"),
+            ProductModel(title: "Brown Perfume",
+                         imageURL: URL(string: "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg")!,
+                         rating: "4",
+                         discount: "18%",
+                         stock: "115",
+                         price: "225€"),
+            ProductModel(title: "Brown Perfume",
+                         imageURL: URL(string: "https://cdn.dummyjson.com/product-images/13/thumbnail.webp")!,
+                         rating: "3.11",
+                         discount: "130%",
+                         stock: "1152",
+                         price: "2225€")
         ]
     }
 }
