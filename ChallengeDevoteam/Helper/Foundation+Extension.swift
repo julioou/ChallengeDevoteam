@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Float {
+extension Double {
 
     func twoDigitString() -> String {
         String(format: "%.2f", self)

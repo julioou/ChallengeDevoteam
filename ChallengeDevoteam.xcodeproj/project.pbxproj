@@ -21,6 +21,10 @@
 		43E9645E2BA9BE650050A172 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9645D2BA9BE650050A172 /* ProductModel.swift */; };
 		43E964602BA9CEB10050A172 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9645F2BA9CEB10050A172 /* DetailView.swift */; };
 		43E964622BA9CEC50050A172 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964612BA9CEC50050A172 /* DetailViewModel.swift */; };
+		43E964642BAAF6190050A172 /* ProductData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964632BAAF6190050A172 /* ProductData.swift */; };
+		43E964672BAAF6C10050A172 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964662BAAF6C10050A172 /* APIError.swift */; };
+		43E9646A2BAAFD810050A172 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E964692BAAFD810050A172 /* NetworkManager.swift */; };
+		43E9646C2BAB0A970050A172 /* ProductsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E9646B2BAB0A970050A172 /* ProductsProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		43E9645D2BA9BE650050A172 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		43E9645F2BA9CEB10050A172 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		43E964612BA9CEC50050A172 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		43E964632BAAF6190050A172 /* ProductData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductData.swift; sourceTree = "<group>"; };
+		43E964662BAAF6C10050A172 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		43E964692BAAFD810050A172 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		43E9646B2BAB0A970050A172 /* ProductsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +172,10 @@
 		43E964492BA9AA910050A172 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				43E964652BAAF6AE0050A172 /* Errors */,
+				43E964682BAAF7450050A172 /* Data */,
+				43E964692BAAFD810050A172 /* NetworkManager.swift */,
+				43E9646B2BAB0A970050A172 /* ProductsProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -193,6 +205,22 @@
 				43E964522BA9B2FB0050A172 /* Foundation+Extension.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		43E964652BAAF6AE0050A172 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				43E964662BAAF6C10050A172 /* APIError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		43E964682BAAF7450050A172 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				43E964632BAAF6190050A172 /* ProductData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,8 +362,12 @@
 				43E964532BA9B2FB0050A172 /* Foundation+Extension.swift in Sources */,
 				43E9645E2BA9BE650050A172 /* ProductModel.swift in Sources */,
 				43E9644D2BA9AB4E0050A172 /* ProductCardView.swift in Sources */,
+				43E964672BAAF6C10050A172 /* APIError.swift in Sources */,
 				43E964602BA9CEB10050A172 /* DetailView.swift in Sources */,
+				43E9646A2BAAFD810050A172 /* NetworkManager.swift in Sources */,
 				43E964202BA98D140050A172 /* Home.swift in Sources */,
+				43E964642BAAF6190050A172 /* ProductData.swift in Sources */,
+				43E9646C2BAB0A970050A172 /* ProductsProvider.swift in Sources */,
 				43E9645B2BA9BDF70050A172 /* HomeViewModel.swift in Sources */,
 				43E9641E2BA98D140050A172 /* ChallengeDevoteamApp.swift in Sources */,
 				43E964622BA9CEC50050A172 /* DetailViewModel.swift in Sources */,

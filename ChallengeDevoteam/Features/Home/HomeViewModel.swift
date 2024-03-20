@@ -8,65 +8,76 @@
 import Foundation
 import Combine
 
-class HomeViewModel: ObservableObject {
-    @Published var products: [ProductModel] = []
+protocol HomeViewModelProtocol: ObservableObject {
+    var products: [ProductModel] { get }
+    init(_ networkManager: ProductsFetcherProtocol)
+    func fetchProduct()
 }
 
-// mock request
+class HomeViewModel: HomeViewModelProtocol {
+    @Published var products: [ProductModel] = []
+    
+    private let provider: ProductsFetcherProtocol
+    private var subscribers = Set<AnyCancellable>()
 
-extension HomeViewModel {
+    required init(_ provider: ProductsFetcherProtocol = ProductsProvider()) {
+        self.provider = provider
+    }
 
-    func requestProducts() {
-//        products = [ProductModel(title: "perfume Oil",
-//                                 imageURL: URL(string: "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg")!,
-//                                 rating: "4.26"),
-//                    ProductModel(title: "Brown Perfume",
-//                                             imageURL: URL(string: "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg")!,
-//                                             rating: 4),
-//                    ProductModel(title: "Fog Scent Xpressio Perfume",
-//                                             imageURL: URL(string: "https://cdn.dummyjson.com/product-images/13/thumbnail.webp")!,
-//                                             rating: 4.59)
-//        ]
+    func fetchProduct() {
+//        provider
+//            .fetchProductList()
+//            .receive(on: DispatchQueue.main)
+//            .sink(receiveCompletion: { completion in
+//                switch completion {
+//                case .finished:
+//                    break
+//                case .failure:
+//                    self.products = [] //TODO: Should show empy screen, possibility to refresh
+//                }
+//            }, receiveValue: { result in
+//
+//                self.products = result.products.compactMap { self.parseToModel(from: $0) }
+//            })
+//            .store(in: &subscribers)
 
-        products = [
-            ProductModel(title: "perfume Oil",
-                         imageURL: URL(string: "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg")!,
-                         rating: "4.26",
-                         discount: "8%",
-                         stock: "15",
-                         price: "25€"),
-            ProductModel(title: "Brown Perfume",
-                         imageURL: URL(string: "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg")!,
-                         rating: "4",
-                         discount: "18%",
-                         stock: "115",
-                         price: "225€"),
-            ProductModel(title: "Brown Perfume",
-                         imageURL: URL(string: "https://cdn.dummyjson.com/product-images/13/thumbnail.webp")!,
-                         rating: "3.11",
-                         discount: "130%",
-                         stock: "1152",
-                         price: "2225€")
-        ]
+        products = productsMock.compactMap { self.parseToModel(from: $0) }
+    }
+
+    func parseToModel(from data: ProductData) -> ProductModel? {
+        guard let title = data.title,
+              let imageString = data.thumbnail,
+              let url = URL(string: imageString),
+              let rating = data.rating,
+              let discount = data.discountPercentage,
+              let stock = data.stock,
+              let price = data.price else { return nil }
+        return ProductModel(title: title,
+                     imageURL: url,
+                     rating: rating.twoDigitString(),
+                     discount: String(discount),
+                     stock: String(stock),
+                     price: String(price))
     }
 }
 
-
-/*
-
- mock json
-
- {"products":[{"id":11,
- "title":"perfume Oil",
- "rating":4.26,
- "thumbnail":""},
- {"id":12,
- "title":"Brown Perfume",
- "rating":4,
- "thumbnail":"https://cdn.dummyjson.com/product-images/12/thumbnail.jpg"},
- {"id":13,
- "title":"Fog Scent Xpressio Perfume",
- "rating":4.59,
- "thumbnail":"https://cdn.dummyjson.com/product-images/13/thumbnail.webp"}],"total":100,"skip":10,"limit":3}
-
- */
+private let productsMock = [
+    ProductData(title: "perfume Oil",
+                rating: 4.26,
+                thumbnail: "https://cdn.dummyjson.com/product-images/11/thumbnail.jpg",
+                 discountPercentage: 8,
+                 stock: 15,
+                 price: 25),
+    ProductData(title: "Brown Perfume",
+                rating: 4,
+                thumbnail: "https://cdn.dummyjson.com/product-images/12/thumbnail.jpg",
+                discountPercentage: 18,
+                 stock: 115,
+                 price: 225),
+    ProductData(title: "Brown Perfume",
+                rating: 3.11,
+                thumbnail: "https://cdn.dummyjson.com/product-images/13/thumbnail.webp",
+                discountPercentage: 130,
+                 stock: 1152,
+                 price: 2225)
+]

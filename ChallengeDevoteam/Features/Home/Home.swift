@@ -7,9 +7,13 @@
 
 import SwiftUI
 
-struct Home: View {
-    
-    @StateObject var viewModel = HomeViewModel()
+struct Home<ViewModel: HomeViewModelProtocol>: View {
+
+    @StateObject var viewModel: ViewModel
+
+    init (viewModel: ViewModel = HomeViewModel()) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
 
     var body: some View {
         NavigationView {
@@ -39,7 +43,7 @@ struct Home: View {
             .background(Color(.systemGray6)).edgesIgnoringSafeArea(.all)
         }
         .onAppear {
-            viewModel.requestProducts()
+            viewModel.fetchProduct()
         }
     }
 }

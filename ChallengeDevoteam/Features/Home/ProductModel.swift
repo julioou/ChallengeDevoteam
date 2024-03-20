@@ -18,12 +18,3 @@ struct ProductModel: Identifiable, Hashable {
     let stock: String
     let price: String
 }
-
-
-/*
- query
-
- https://dummyjson.com/products?limit=10&skip=10&select=title,rating,thumbnail,images,discountPercentage,stock,price
-
- https://dummyjson.com/products?limit=10&skip=10&select=title,rating,thumbnail
- */
